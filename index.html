@@ -1,12 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
+
+<style>
+  * {
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body{
+    background: #E5E5E5;
+  }
+  img {
+    display: block;
+  }
+
+  .start-block-mobile {
+    display: none;
+  }
+
+  .start-block-pc-content-right {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(./img/IMG_1969.png);
+    height: 100%;
+    display: grid;
+    padding: 62px 100px 0 0;
+    justify-content: right;
+    align-items: start;
+  }
+
+  .start-block-pc-content {
+    height: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 776px;
+  }
+
+  .start-block-pc-content-right-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .start-block-pc-content-right-menu img {
+    cursor: pointer;
+  }
+
+  .start-block-pc {}
+
+  .start-block-pc-content-left {
+    position: relative;
+  }
+
+  .start-block-pc-content-left-bg-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(./img/IMG_1969.png) center center no-repeat;
+    background-size: cover;
+  }
+
+  .start-block-pc-content-left-bg {
+    width: 100%;
+    z-index: 2;
+    position: absolute;
+    backdrop-filter: blur(20px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .start-block-pc-content-right-menu-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-right: 20px;
+  }
+
+  .start-block-pc-content-left-body {
+    display: flex;
+    flex-direction: column;
+    z-index: 50;
+    padding: 40px 0 80px 105px;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .start-block-pc-content-left-body-header img {
+    display: block;
+    margin-left: 35px;
+  }
+
+  .start-block-pc-content-left-body-main {
+    margin-top: 80px;
+    margin-left: 65px;
+  }
+
+  .start-block-pc-content-left-body-main-title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 150%;
+    width: 662px;
+    height: 216px;
+    color: white;
+  }
+
+  .start-block-pc-content-left-body-main-after-title {
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+    line-height: 150%;
+    width: 528px;
+    height: 90px;
+  }
+
+  .start-block-pc-content-left-body-main-title span {
+    color: #FFCC00;
+  }
+
+  .start-block-pc-content-left-body-main-link {
+    background-color: #FFCC00;
+    display: flex;
+    margin-top: 50px;
+    height: 50px;
+    width: 250px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 24px;
+    color: black;
+  }
+
+  .start-block-pc-content-left-body-video-open {
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+    cursor: pointer;
+  }
+
+
+  .start-block-pc-content-left-body-video-open-circle1 {
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    margin-right: 20px;
+  }
+
+  .start-block-pc-content-left-body-video-open-circle2 {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    background-color: white;
+  }
+
+  .start-block-pc-content-left-body-video-open-text {
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+  }
+
+  .start-block-pc-content-left-body-video-open:hover * {
+    color: #FFCC00;
+    fill: #FFCC00;
+
+  }
+
+  .start-block-pc-content-left-body-video-open:hover .start-block-pc-content-left-body-video-open-circle1,
+  .start-block-pc-content-left-body-video-open:hover .start-block-pc-content-left-body-video-open-circle2 {
+    background-color: #FFCC00;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-body{
+    max-width: 1920px;
+    background-color: white;
+  }
+</style>
+
 <body>
-  sex
+  <div class="content">
+    <div class="content-body">
+  <div class="start-block">
+    <div class="start-block-pc">
+      <div class="start-block-pc-content">
+        <div class="start-block-pc-content-left">
+          <div class="start-block-pc-content-left-bg-image">
+          </div>
+          <div class="start-block-pc-content-left-bg">
+          </div>
+          <div class="start-block-pc-content-left-body">
+            <div class="start-block-pc-content-left-body-header">
+              <img src="./img/YGBrandbook_final.png" />
+            </div>
+            <div class="start-block-pc-content-left-body-main">
+              <div class="start-block-pc-content-left-body-main-title">
+                ФРАНШИЗА БИЗНЕСА ПО ДОСТАВКЕ АВТОМОБИЛЕЙ ИЗ США
+                <span>
+                  YELLOW GARAGE</span>
+
+              </div>
+
+              <div class="start-block-pc-content-left-body-main-after-title">
+                Открывай бизнес с лидером рынка доставки автомобилей в Украине
+              </div>
+
+
+              <a href="#" class="start-block-pc-content-left-body-main-link">
+                Подробнее
+              </a>
+            </div>
+            <div onclick="alert(2)" class="start-block-pc-content-left-body-video-open">
+              <div class="start-block-pc-content-left-body-video-open-circle1">
+              </div>
+              <div class="start-block-pc-content-left-body-video-open-circle2">
+              </div>
+              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M50 0C22.4283 0 0 22.4305 0 50C0 77.5695 22.4283 100 50 100C77.5717 100 100 77.5695 100 50C100 22.4305 77.5717 0 50 0ZM50 95.8334C24.7273 95.8334 4.1666 75.2727 4.1666 50C4.1666 24.7273 24.7273 4.1666 50 4.1666C75.2727 4.1666 95.8334 24.7273 95.8334 50C95.8334 75.2727 75.2727 95.8334 50 95.8334Z"
+                  fill="white" />
+                <path
+                  d="M69.8771 48.2483L40.7105 29.4983C40.0717 29.0813 39.2457 29.0588 38.5865 29.4209C37.915 29.7872 37.5 30.4872 37.5 31.2501V68.7501C37.5 69.5129 37.915 70.2129 38.5865 70.5792C38.8957 70.7481 39.2416 70.8335 39.5834 70.8335C39.974 70.8335 40.3688 70.7235 40.7105 70.5018L69.8771 51.7518C70.4713 51.3694 70.8334 50.7081 70.8334 50.0001C70.8334 49.292 70.4713 48.6309 69.8771 48.2483ZM41.6666 64.9333V35.0669L64.8967 50.0001L41.6666 64.9333Z"
+                  fill="white" />
+              </svg>
+              <div class="start-block-pc-content-left-body-video-open-text">
+                Просмотреть видео
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="start-block-pc-content-right">
+          <div class="start-block-pc-content-right-menu">
+            <div class="start-block-pc-content-right-menu-text">
+              Меню
+            </div>
+            <img src="./img/menu.png" alt="">
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="start-block-mobile">
+
+    </div>
+  </div>
+  <style>
+    .about1-block-pc {
+      display: grid;
+      align-items: center;
+      padding: 75px 100px;
+      width: 100%;
+      grid-template-columns: auto 1fr auto;
+    }
+
+    .about1-block-pc-content {
+      padding: 0 40px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: normal;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .about1-block-pc-image img {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .about1-block-pc-content-meta-image {
+      margin-top: 40px;
+    }
+
+    .about1-block {
+      z-index: 100;
+      background-color: white;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+  <div class="about1-block">
+    <div class="about1-block-pc">
+      <div class="about1-block-pc-image">
+        <img src="./img/IMG_4205.png" alt="">
+      </div>
+
+      <div class="about1-block-pc-content">
+        <div class="about1-block-pc-content-text">
+          Компания YELLOW GARAGE является партнером международной логистической компании "Lion Trans" - единственного
+          официального представителя аукциона IAАI в Украине.
+        </div>
+
+        <div class="about1-block-pc-content-meta-image">
+          <img src="./img/Group 1.png" alt="">
+        </div>
+      </div>
+      <div class="about1-block-pc-image">
+        <img src="./img/IMG_9619.png" alt="">
+
+      </div>
+    </div>
+
+    <div class="about1-block-mobile">
+    </div>
+  </div>
+  <style>
+    .about2-block{
+      z-index: -1;
+    }
+    .about2-block-pc-staff-wheel {
+      position: absolute;
+      top: -20px;
+      left: 50px;
+    }
+
+    .about2-block-pc {
+      position: relative;
+      padding: 60px 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .about2-block-pc-body {
+      display: flex;
+      align-items: center;
+    }
+
+    .about2-block-pc-body-text {
+      width: 400px;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .about2-block-pc-body-text-header {
+      margin-bottom: 25px;
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    .about2-block-pc-body-center-image {
+      margin: 50px 80px;
+      position: relative;
+      border: 28.5px solid #FFCC00;
+      height: 350px;
+      width: 350px;
+      border-radius: 50%;
+    }
+
+    .about2-block-pc-body-center-image img {
+      width: 102%;
+      height: 102%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .about2-block-pc-header {
+      font-weight: bold;
+      font-size: 36px;
+    }
+
+    .about2-block-pc-footer {
+      width: 652px;
+      height: 108px;
+      font-weight: normal;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .about2-block-pc-body-text-body {
+      font-size: 18px;
+      line-height: 150%;
+    }
+  </style>
+  <div class="about2-block">
+    <div class="about2-block-pc">
+      <img class="about2-block-pc-staff-wheel" src="./img/car_wheel_PNG233071.png" alt="">
+      <div class="about2-block-pc-header">
+        YELLOW GARAGE в цифрах
+
+      </div>
+      <div class="about2-block-pc-body">
+        <div class="about2-block-pc-body-text">
+          <div class="about2-block-pc-body-text-header">
+            72 млн $
+
+          </div>
+          <div class="about2-block-pc-body-text-body">
+            ежегодно тратят украинцы на приобретение авто в компании Yellow Garage
+          </div>
+        </div>
+        <div class="about2-block-pc-body-center-image">
+          <img src="./img/MaskGroup.png" />
+        </div>
+
+        <div class="about2-block-pc-body-text">
+          <div class="about2-block-pc-body-text-header">
+            от 500 машин в месяц
+
+          </div>
+          <div class="about2-block-pc-body-text-body">
+            компания выкупает на аукционах
+
+          </div>
+        </div>
+      </div>
+      <div class="about2-block-pc-footer">
+        Такие результаты - это показатель доверия клиентов, которого мы достигли благодаря качественной реализации
+        процессов на всех этапах.
+      </div>
+    </div>
+  </div>
+
+
+<style>
+  .join-part{
+    padding: 60px 215px 80px;
+  }
+  .join-part-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .join-part-body-meta-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .join-part-body-meta-info img{
+    max-width: 100%;
+  }
+</style>
+  <div class="join-part">
+    <div class="join-part-body">
+
+      <div class="join-part-body-head1">
+        Приглашаем к партнерству!
+      </div>
+      <div class="join-part-body-head2">
+        5 причин открыть собственный офис YELLOW GARAGE
+      </div>
+
+      <div class="join-part-body-meta-info">
+        <img src="./img/IMG_42301.png" alt="">
+        <div class="join-part-body-meta-info-list">
+          <div class="join-part-body-meta-info-list-element">
+            <div class="join-part-body-meta-info-list-element-index">
+              01.
+            </div>
+            <div class="join-part-body-meta-info-list-element-text">
+              Полная франчайзинговая поддержка.
+
+            </div>
+          </div>
+          <div class="join-part-body-meta-info-list-element">
+            <div class="join-part-body-meta-info-list-element-index">
+              01.
+            </div>
+            <div class="join-part-body-meta-info-list-element-text">
+              Полная франчайзинговая поддержка.
+
+            </div>
+          </div>
+          <div class="join-part-body-meta-info-list-element">
+            <div class="join-part-body-meta-info-list-element-index">
+              01.
+            </div>
+            <div class="join-part-body-meta-info-list-element-text">
+              Полная франчайзинговая поддержка.
+
+            </div>
+          </div>
+          <div class="join-part-body-meta-info-list-element">
+            <div class="join-part-body-meta-info-list-element-index">
+              01.
+            </div>
+            <div class="join-part-body-meta-info-list-element-text">
+              Полная франчайзинговая поддержка.
+
+            </div>
+          </div>
+          <div class="join-part-body-meta-info-list-element">
+            <div class="join-part-body-meta-info-list-element-index">
+              01.
+            </div>
+            <div class="join-part-body-meta-info-list-element-text">
+              Полная франчайзинговая поддержка.
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .main-point-block-bg-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/IMG_01993.png");
+      background-size: cover;
+    }
+
+    .main-point-block-bg {
+      width: 100%;
+      z-index: 2;
+      position: absolute;
+      backdrop-filter: blur(10px);
+      height: 100%;
+      /* background-color: rgba(0, 0, 0, 0.8); */
+    }
+
+    .main-point-block {
+      height: 500px;
+      position: relative;
+    }
+
+    .main-point-block-text {
+      z-index: 4;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 150%;
+      text-align: center;
+      color: #FFFFFF;
+      flex-direction: column;
+    }
+
+    .main-point-block-text-inner {
+      max-width: 1111px;
+    }
+
+    .main-point-block-text-yellow {
+      color: #FFCC00;
+    }
+
+
+    .main-point-block-key {
+      position: absolute;
+      z-index: 6;
+      right: 50px;
+      top: -72px;
+    }
+  </style>
+  <div class="main-point-block">
+    <div class="main-point-block-bg-image">
+    </div>
+    <div class="main-point-block-bg">
+    </div>
+    <img class="main-point-block-key" src="./img/keys1.png" alt="">
+    <div class="main-point-block-text">
+      <div class="main-point-block-text-inner">
+
+        <div>
+          Вашими главными задачами будет управление бизнесом, качественная работа с клиентами и достойное представление
+          бренда
+          <span class="main-point-block-text-yellow">YELLOW GARAGE</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
 </body>
+
 </html>

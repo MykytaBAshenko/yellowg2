@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <style>
@@ -33,6 +34,18 @@
 
   .start-block-mobile {
     display: none;
+  }
+
+  .display-none {
+    display: none !important;
+  }
+
+  .display-block {
+    display: block !important;
+  }
+
+  .overflow-hidden {
+    overflow: hidden !important;
   }
 
   .start-block-pc-content-right {
@@ -218,50 +231,139 @@
   .popup-menu.active {
     display: flex;
   }
-  .popup-menu-meta-image{
+
+  .popup-menu-meta-image {
     height: 80px;
   }
-  .popup-menu-body-meta-info{
+
+  .popup-menu-body-meta-info {
     display: grid;
     gap: 20px;
+    margin-top: 50px;
   }
-  .popup-menu-body-meta-info-element{
+
+  .popup-menu-body-meta-info-element {
     display: flex;
+    align-items: center;
+    gap: 15px;
   }
-  .popup-menu-meta-links *{
+
+  .popup-menu-meta-links {
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+  }
+
+  .popup-menu-meta-links * {
     display: block;
 
   }
-  .popup-menu-body{
+
+  .popup-menu-body {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  .popup-menu-body-head-click{
+
+  .popup-menu-body-head-click {
     display: flex;
     align-items: center;
+    cursor: pointer;
     font-weight: 500;
-font-size: 24px;
-line-height: 150%;
+    font-size: 24px;
+    line-height: 150%;
   }
-  .popup-menu-body-head-click-text{
+
+  .popup-menu-body-head-click-text {
     margin-right: 20px;
   }
-  .popup-menu-body-head{
+
+  .popup-menu-body-head {
     margin-bottom: 70px;
     align-self: flex-end;
   }
+
+  .popup-menu-body-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .popup-menu-body-list a {
+    color: black;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .popup-menu-body-make-zayva {
+    margin-top: 60px;
+    background: #FFCC00;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 150%;
+    width: 270px;
+    color: #000000;
+  }
+
+  .popup-menu-meta-image {
+    margin-top: 50px;
+  }
+
+  .open-video {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.596);
+  }
+
+  .open-video svg {
+    fill: #FFCC00;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    top: 20px
+  }
+
+  .open-video svg:hover * {
+    fill: white;
+  }
+
+  .open-video iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 140px);
+    height: calc(100vh - 140px);
+  }
 </style>
 
-<body>
+<body id="body">
+  <div id="video-body" class="open-video display-none">
+    <svg id="video-body-close" width="35" height="35" viewBox="0 0 35 35" fill="#FFCC00"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M19.4331 17.5008L34.5991 2.33474C35.133 1.80079 35.133 0.935084 34.5991 0.401198C34.0651 -0.132688 33.1994 -0.132756 32.6655 0.401198L17.4995 15.5672L2.33352 0.401198C1.79956 -0.132756 0.933863 -0.132756 0.399977 0.401198C-0.133908 0.935152 -0.133977 1.80085 0.399977 2.33474L15.566 17.5007L0.399977 32.6668C-0.133977 33.2007 -0.133977 34.0664 0.399977 34.6003C0.66692 34.8672 1.01685 35.0007 1.36678 35.0007C1.71671 35.0007 2.06658 34.8672 2.33359 34.6003L17.4995 19.4343L32.6655 34.6003C32.9324 34.8672 33.2823 35.0007 33.6323 35.0007C33.9822 35.0007 34.3321 34.8672 34.5991 34.6003C35.133 34.0663 35.133 33.2006 34.5991 32.6668L19.4331 17.5008Z"
+        fill="#FFCC00" />
+    </svg>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+  </div>
   <div class="content">
     <div class="content-body">
       <div class="start-block">
         <div id="popup-menu" class="popup-menu">
           <div class="popup-menu-body">
             <div class="popup-menu-body-head">
-              <div class="popup-menu-body-head-click">
+              <div id="popup-menu-body-head-click" class="popup-menu-body-head-click">
                 <div class="popup-menu-body-head-click-text">
                   Меню
                 </div>
@@ -274,10 +376,10 @@ line-height: 150%;
             </div>
             <div class="popup-menu-body-list">
               <a href="#">О нас</a>
-              <a href="#">О нас</a>
-              <a href="#">О нас</a>
-              <a href="#">О нас</a>
-              <a href="#">О нас</a>
+              <a href="#">Финансы</a>
+              <a href="#">Почему мы?</a>
+              <a href="#">Поддержка</a>
+              <a href="#">Контакты</a>
             </div>
             <a class="popup-menu-body-make-zayva" href="#">Заполнить заявку</a>
             <div class="popup-menu-body-meta-info">
@@ -377,7 +479,7 @@ line-height: 150%;
                     Подробнее
                   </a>
                 </div>
-                <div onclick="alert(2)" class="start-block-pc-content-left-body-video-open">
+                <div id="videopopup" class="start-block-pc-content-left-body-video-open">
                   <div class="start-block-pc-content-left-body-video-open-circle1">
                   </div>
                   <div class="start-block-pc-content-left-body-video-open-circle2">
@@ -414,16 +516,41 @@ line-height: 150%;
         </div>
       </div>
       <script>
+        let body = document.getElementById("body")
+        let videoBody = document.getElementById("video-body")
+        let videopopup = document.getElementById("videopopup")
+        let videoBodyClose = document.getElementById("video-body-close")
+        const videofn = function () {
+          if (videoBody.classList.contains("display-none")) {
+            videoBody.classList.remove("display-none")
+            body.classList.add("overflow-hidden")
+
+          } else {
+            videoBody.classList.add("display-none")
+            body.classList.remove("overflow-hidden")
+
+          }
+        }
+        videoBodyClose.onclick = videofn
+        videopopup.onclick = videofn
+      </script>
+      <script>
         let popup = document.getElementById("btn-popup")
+
+        let closebtn = document.getElementById("popup-menu-body-head-click")
         const ccc = () => {
           if (document.getElementById("popup-menu").classList.contains("active")) {
             document.getElementById("popup-menu").classList.remove("active");
+            popup.classList.remove("display-none")
+
           }
           else {
+            popup.classList.add("display-none")
             document.getElementById("popup-menu").classList.add("active");
           }
         }
         popup.onclick = ccc
+        closebtn.onclick = ccc
       </script>
       <style>
         .about1-block-pc {
@@ -1678,7 +1805,7 @@ line-height: 150%;
                 </div>
                 <div id="calculator-body-content-inner-calccount-number"
                   class="calculator-body-content-inner-calccount-number">
-                  8888 $
+                  40000 $
                 </div>
               </div>
             </div>
@@ -1877,6 +2004,195 @@ line-height: 150%;
   </div>
 
   </div>
+  <div class="success">
+    <div class="success__body">
+      <div class="success__close">
+        <svg viewBox="0 0 320 512">
+          <path
+            d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z">
+          </path>
+        </svg>
+      </div>
+      <img src="img/yellow-bg.png" alt="">
+      <div class="success__title">Спасибо за заявку!</div>
+      <div class="success__subtitle">Ожидайте звонка нашего менеджера</div>
+    </div>
+    <div class="success__bg"></div>
+  </div>
 </body>
+<script>
+  $('#contacts-container-form').submit(function (e) {
+    e.preventDefault()
+    let countError = 0;
+    contactName = $('#name_contacts-input');
+    contactPhone = $('#phone_contacts-input');
+
+    var data_json = {
+      "Город": $('#city_contacts-input').val(),
+      "Бюджет": $('#budget_contacts-input').val(),
+      "Сообщение": $('#message_contacts-input').val(),
+      "Цель": "получить обратную связь",
+
+    }
+
+    if (!countError) {
+      $.ajax({
+        url: '/post_contact.php',
+        type: 'post',
+        data: {
+          subject: 'Форма заявки',
+          name: contactName.val(),
+          phone: contactPhone.val(),
+          data_json: JSON.stringify(data_json)
+        },
+        success: function () {
+          $('#contacts-container-form input, textarea').val('')
+
+          $('.success').addClass("display-block")
+
+          setTimeout(function () {
+            $('.success').removeClass("display-block")
+
+          }, 3000)
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+          console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+      });
+    }
+  })
+
+</script>
+<style>
+  .success {
+    display: none;
+    position: fixed;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .success__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+  }
+
+  .success__body {
+    width: calc(100% - 60px);
+    max-width: 701px;
+    position: absolute;
+    border-radius: 20px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* padding: 50px 15px; */
+    background: #fff;
+    z-index: 2;
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+  }
+
+  .success img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    transform: translate(0, -120px);
+  }
+
+  .success__close {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .success__close svg {
+    width: 20px;
+    height: auto;
+    fill: #000;
+  }
+
+  .success__title {
+
+    display: block;
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    padding-left: 33px;
+    height: 163px;
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .success__subtitle {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0 65px;
+    font-size: 25px;
+  }
+
+  @media (max-width: 800px) {
+
+    .success img {
+      display: none;
+    }
+
+    .success__title {
+      font-size: 28px;
+      background-color: #ffcc00;
+    }
+
+    .success__title {
+      height: 103px;
+    }
+
+    .success__subtitle {
+
+      padding: 30px 10px 35px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .success__body {
+      top: 50%;
+    }
+
+    .success__title {
+      font-size: 28px;
+    }
+
+    .success__subtitle {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .success__title {
+      font-size: 18px;
+    }
+
+    .success__subtitle {
+      font-size: 15px;
+    }
+  }
+</style>
 
 </html>

@@ -54,6 +54,7 @@
     display: grid;
     padding: 62px 100px 0 0;
     justify-content: right;
+    z-index: 100;
     align-items: start;
   }
 
@@ -314,6 +315,7 @@
 
   .popup-menu-meta-image {
     margin-top: 50px;
+    height: 80px;
   }
 
   .open-video {
@@ -343,6 +345,9 @@
     transform: translate(-50%, -50%);
     width: calc(100% - 140px);
     height: calc(100vh - 140px);
+  }
+  .image-car-yellow{
+    height: 150px;
   }
 </style>
 
@@ -408,14 +413,14 @@
               </div>
             </div>
             <div class="popup-menu-meta-links">
-              <a href="#">
+              <a href="https://www.facebook.com/yellowgarage.co">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M30 15C30 6.71484 23.2852 0 15 0C6.71484 0 0 6.71484 0 15C0 23.2852 6.71484 30 15 30C15.0879 30 15.1758 30 15.2637 29.9941V18.3223H12.041V14.5664H15.2637V11.8008C15.2637 8.5957 17.2207 6.84961 20.0801 6.84961C21.4512 6.84961 22.6289 6.94922 22.9688 6.99609V10.3477H21C19.4473 10.3477 19.1426 11.0859 19.1426 12.1699V14.5605H22.8633L22.377 18.3164H19.1426V29.4199C25.4121 27.6211 30 21.8496 30 15Z"
                     fill="black" />
                 </svg>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/yellowgarage.co/?hl=ru">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.8711 15C17.8711 16.5857 16.5857 17.8711 15 17.8711C13.4143 17.8711 12.1289 16.5857 12.1289 15C12.1289 13.4143 13.4143 12.1289 15 12.1289C16.5857 12.1289 17.8711 13.4143 17.8711 15Z"
@@ -429,7 +434,7 @@
                 </svg>
 
               </a>
-              <a href="#">
+              <a href="http://invite.viber.com/?g2=AQBrCzOf7CmAcEx1x9XTnGdDLBb4SOA5J+9zk5z7Do0PO9AF8PIn1ad9w86JF0nn">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19.4902 6.93705C16.5108 6.37027 13.4893 6.37027 10.5092 6.93705C9.20582 7.22735 7.56604 8.79867 7.24546 10.0626C6.71225 12.5081 6.71225 14.9872 7.24546 17.4327C7.56604 18.6966 9.20582 20.2679 10.5092 20.5582C10.5096 20.5583 10.5099 20.5584 10.5102 20.5584C10.5683 20.5698 10.6106 20.6201 10.6106 20.6793V24.2618C10.6106 24.4409 10.8291 24.5291 10.9536 24.3994L12.6552 22.653C12.6552 22.653 14.0112 21.261 14.2551 21.0107C14.2789 20.9862 14.3118 20.973 14.3459 20.9739C16.0639 21.0215 17.7838 20.8827 19.4902 20.5583C20.7936 20.268 22.434 18.6967 22.7539 17.4328C23.2878 14.9873 23.2878 12.5082 22.7539 10.0626C22.434 8.79867 20.7942 7.22735 19.4902 6.93705ZM19.5356 17.6151C19.2749 18.1686 18.8956 18.6291 18.3485 18.923C18.1941 19.0059 18.0096 19.0327 17.8353 19.0864C17.6349 19.0256 17.444 18.9847 17.2666 18.9111C15.429 18.1487 13.7377 17.1651 12.398 15.6573C11.6362 14.7998 11.0399 13.8318 10.5359 12.8074C10.2969 12.3216 10.0954 11.8168 9.89011 11.3152C9.70283 10.8578 9.97865 10.3853 10.269 10.0407C10.5415 9.71731 10.8921 9.46979 11.2718 9.28738C11.5681 9.145 11.8605 9.22708 12.0769 9.47829C12.5448 10.0214 12.9746 10.5922 13.3227 11.2217C13.5367 11.609 13.4779 12.0823 13.0901 12.3458C12.9958 12.4098 12.9099 12.485 12.8221 12.5573C12.7451 12.6207 12.6726 12.6848 12.6198 12.7706C12.5233 12.9276 12.5187 13.1129 12.5808 13.2837C13.0591 14.5981 13.8653 15.6203 15.1884 16.1708C15.4001 16.2589 15.6127 16.3614 15.8566 16.333C16.2651 16.2853 16.3973 15.8372 16.6835 15.6032C16.9633 15.3744 17.3208 15.3714 17.6222 15.5621C17.9236 15.7528 18.2158 15.9576 18.5062 16.1646C18.7913 16.3677 19.0752 16.5665 19.3382 16.7981C19.5909 17.0207 19.678 17.3128 19.5356 17.6151ZM17.1629 13.3317C17.0488 13.3338 17.0936 13.3315 17.137 13.3303C16.9532 13.3238 16.8532 13.2156 16.8334 13.0397C16.819 12.9111 16.8076 12.7808 16.7769 12.6558C16.7165 12.4094 16.5856 12.1811 16.3784 12.0302C16.2806 11.9589 16.1697 11.9069 16.0536 11.8734C15.9061 11.8309 15.7529 11.8426 15.6057 11.8065C15.4459 11.7674 15.3575 11.6379 15.3826 11.488C15.4054 11.3515 15.5382 11.245 15.6873 11.2558C16.6192 11.3231 17.2853 11.8049 17.3803 12.902C17.387 12.9794 17.3949 13.0612 17.3777 13.1352C17.3498 13.2556 17.2638 13.3183 17.1768 13.3297C17.184 13.3298 17.1826 13.3304 17.1629 13.3317ZM16.5834 10.8224C16.2974 10.6824 15.9882 10.5954 15.6747 10.5435C15.5377 10.5209 15.3993 10.5071 15.2616 10.488C15.0948 10.4648 15.0058 10.3585 15.0137 10.1941C15.021 10.0401 15.1336 9.92928 15.3015 9.93875C15.8531 9.97009 16.3859 10.0893 16.8763 10.349C17.8736 10.8771 18.4433 11.7108 18.6096 12.8239C18.6172 12.8744 18.6292 12.9243 18.633 12.975C18.6425 13.0999 18.6484 13.225 18.658 13.3898C18.654 13.4198 18.6519 13.4904 18.6344 13.5569C18.5706 13.7982 18.2048 13.8284 18.1205 13.5849C18.0955 13.5126 18.0918 13.4304 18.0917 13.3525C18.0908 12.8434 17.9801 12.3348 17.7234 11.8919C17.4595 11.4367 17.0562 11.054 16.5834 10.8224ZM19.665 14.2627C19.4723 14.265 19.3856 14.1038 19.3731 13.931C19.3483 13.5889 19.3312 13.2454 19.284 12.9062C19.0352 11.1156 17.6074 9.63417 15.8251 9.31628C15.5569 9.26843 15.2824 9.25585 15.0108 9.22735C14.839 9.20931 14.6141 9.19891 14.576 8.98543C14.5441 8.80644 14.6952 8.66392 14.8656 8.65477C14.912 8.65227 14.9586 8.65438 15.0051 8.65458C17.3134 8.71929 15.146 8.65958 15.0113 8.65491C17.4122 8.72488 19.3834 10.3192 19.8062 12.6935C19.8782 13.0984 19.9039 13.5124 19.936 13.9234C19.9494 14.0962 19.8515 14.2604 19.665 14.2627Z"
@@ -439,7 +444,7 @@
                     fill="black" />
                 </svg>
               </a>
-              <a href="#">
+              <a href="http://t.me/Yellowgarage20">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z"
@@ -447,10 +452,45 @@
                 </svg>
               </a>
             </div>
-            <img class="popup-menu-meta-image" src="img/YGBrandbook_final.png" alt="">
+            <img class="popup-menu-meta-image" src="img/Logofull.svg"alt="">
           </div>
 
         </div>
+        <style>
+          .elipse3{
+            right: 87px;
+            bottom: 49px;
+            position: absolute;
+            z-index: 4;
+          }
+          .elipse4{
+            left: 142px;
+            top: 66px;
+            position: absolute;
+            z-index: 4;
+          }
+          .woerdstop{
+            position: absolute;
+            z-index: 4;
+            top: 0;
+            right: 375px;
+          }
+          .Yellow{
+            position: absolute;
+            z-index: 4;
+            right: 0;
+            bottom: 186px;
+            transform: translate(100px, 0);
+          }
+          .Garage{
+            z-index: 4;
+            right: 0;
+            position: absolute;
+            bottom: 80px;
+            transform: translate(18px, 0);
+
+          }
+        </style>
         <div class="start-block-pc">
           <div class="start-block-pc-content">
             <div class="start-block-pc-content-left">
@@ -458,9 +498,17 @@
               </div>
               <div class="start-block-pc-content-left-bg">
               </div>
+              <img src="img/Ellipse3.png" class="elipse3" alt="">
+              <img src="img/Ellipse4.png" class="elipse4" alt="">
+              <img src="img/woerdstop.png" class="woerdstop" alt="">
+              <img src="img/Yellow.png" class="Yellow" alt="">
+              <img src="img/Garage.png" class="Garage" alt="">
+
+
+
               <div class="start-block-pc-content-left-body">
                 <div class="start-block-pc-content-left-body-header">
-                  <img src="./img/YGBrandbook_final.png" />
+                  <img src="./img/Logofull.svg" class="image-car-yellow" />
                 </div>
                 <div class="start-block-pc-content-left-body-main">
                   <div class="start-block-pc-content-left-body-main-title">
@@ -1008,7 +1056,7 @@
         <img class="form-section-up" src="./img/form-up.png" alt="">
         <img class="form-section-down" src="./img/form-down.png" alt="">
 
-        <form action="#" id="reasons_for_work_form" class="submit-form">
+        <form id="reasons_for_work_form2" class="submit-form">
           <div class="submit-form-title">
             Интересует франшиза?
           </div>
@@ -1018,10 +1066,10 @@
           <div class="submit-form-control-shell">
 
             <div class="submit-form-control">
-              <input id="submit-form-input-name" placeholder="Имя">
-              <input id="submit-form-input-secondname" placeholder="Город">
-              <input id="submit-form-input-email" placeholder="E-mail">
-              <input id="submit-form-input-phone" placeholder="Телефон">
+              <input id="submit-form-input-name2" placeholder="Имя"  required>
+              <input id="submit-form-input-citi2" placeholder="Город"  required>
+              <input id="submit-form-input-email2" placeholder="E-mail" required>
+              <input id="submit-form-input-phone2" placeholder="Телефон" required>
               <button type="submit">Отправить</button>
             </div>
           </div>
@@ -1835,7 +1883,8 @@
 
         .footer-meta-info-element {
           display: flex;
-          justify-content: flex-end
+          width: 200px;
+          justify-content: flex-start;  
         }
 
         .footer-meta-info-element svg {
@@ -1845,6 +1894,7 @@
         .footer-meta-info {
           display: flex;
           gap: 20px;
+          justify-self: right;
           flex-direction: column;
         }
 
@@ -1889,7 +1939,7 @@
         <img src="./img/footer-up.png" class="footer-up" alt="">
         <img src="./img/footer-bottom.png" class="footer-bottom" alt="">
         <div class="footer-content">
-          <form action="#" id="reasons_for_work_form" class="submit-form">
+          <form id="reasons_for_work_form" class="submit-form">
             <div class="submit-form-title">
               Интересует франшиза?
             </div>
@@ -1899,10 +1949,10 @@
             <div class="submit-form-control-shell">
 
               <div class="submit-form-control">
-                <input id="submit-form-input-name" placeholder="Имя">
-                <input id="submit-form-input-secondname" placeholder="Город">
-                <input id="submit-form-input-email" placeholder="E-mail">
-                <input id="submit-form-input-phone" placeholder="Телефон">
+                <input id="submit-form-input-name" placeholder="Имя" required>
+                <input id="submit-form-input-citi" placeholder="Город" required>
+                <input id="submit-form-input-email" placeholder="E-mail" required>
+                <input id="submit-form-input-phone" placeholder="Телефон" required>
                 <button type="submit">Отправить</button>
               </div>
             </div>
@@ -1934,22 +1984,22 @@
                 </svg>
 
                 <div class="footer-meta-info-text">
-                  info@ygshipping.com
+                  0 800 331 011
                 </div>
               </div>
             </div>
 
 
-            <img src="img/YGBrandbook_final.png" alt="">
+            <img src="img/Logofull.svg" class="image-car-yellow" alt="">
             <div class="footer-meta-links">
-              <a href="#">
+              <a href="https://www.facebook.com/yellowgarage.co">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M30 15C30 6.71484 23.2852 0 15 0C6.71484 0 0 6.71484 0 15C0 23.2852 6.71484 30 15 30C15.0879 30 15.1758 30 15.2637 29.9941V18.3223H12.041V14.5664H15.2637V11.8008C15.2637 8.5957 17.2207 6.84961 20.0801 6.84961C21.4512 6.84961 22.6289 6.94922 22.9688 6.99609V10.3477H21C19.4473 10.3477 19.1426 11.0859 19.1426 12.1699V14.5605H22.8633L22.377 18.3164H19.1426V29.4199C25.4121 27.6211 30 21.8496 30 15Z"
                     fill="black" />
                 </svg>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/yellowgarage.co/?hl=ru">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.8711 15C17.8711 16.5857 16.5857 17.8711 15 17.8711C13.4143 17.8711 12.1289 16.5857 12.1289 15C12.1289 13.4143 13.4143 12.1289 15 12.1289C16.5857 12.1289 17.8711 13.4143 17.8711 15Z"
@@ -1963,7 +2013,7 @@
                 </svg>
 
               </a>
-              <a href="#">
+              <a href="http://invite.viber.com/?g2=AQBrCzOf7CmAcEx1x9XTnGdDLBb4SOA5J+9zk5z7Do0PO9AF8PIn1ad9w86JF0nn">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M19.4902 6.93705C16.5108 6.37027 13.4893 6.37027 10.5092 6.93705C9.20582 7.22735 7.56604 8.79867 7.24546 10.0626C6.71225 12.5081 6.71225 14.9872 7.24546 17.4327C7.56604 18.6966 9.20582 20.2679 10.5092 20.5582C10.5096 20.5583 10.5099 20.5584 10.5102 20.5584C10.5683 20.5698 10.6106 20.6201 10.6106 20.6793V24.2618C10.6106 24.4409 10.8291 24.5291 10.9536 24.3994L12.6552 22.653C12.6552 22.653 14.0112 21.261 14.2551 21.0107C14.2789 20.9862 14.3118 20.973 14.3459 20.9739C16.0639 21.0215 17.7838 20.8827 19.4902 20.5583C20.7936 20.268 22.434 18.6967 22.7539 17.4328C23.2878 14.9873 23.2878 12.5082 22.7539 10.0626C22.434 8.79867 20.7942 7.22735 19.4902 6.93705ZM19.5356 17.6151C19.2749 18.1686 18.8956 18.6291 18.3485 18.923C18.1941 19.0059 18.0096 19.0327 17.8353 19.0864C17.6349 19.0256 17.444 18.9847 17.2666 18.9111C15.429 18.1487 13.7377 17.1651 12.398 15.6573C11.6362 14.7998 11.0399 13.8318 10.5359 12.8074C10.2969 12.3216 10.0954 11.8168 9.89011 11.3152C9.70283 10.8578 9.97865 10.3853 10.269 10.0407C10.5415 9.71731 10.8921 9.46979 11.2718 9.28738C11.5681 9.145 11.8605 9.22708 12.0769 9.47829C12.5448 10.0214 12.9746 10.5922 13.3227 11.2217C13.5367 11.609 13.4779 12.0823 13.0901 12.3458C12.9958 12.4098 12.9099 12.485 12.8221 12.5573C12.7451 12.6207 12.6726 12.6848 12.6198 12.7706C12.5233 12.9276 12.5187 13.1129 12.5808 13.2837C13.0591 14.5981 13.8653 15.6203 15.1884 16.1708C15.4001 16.2589 15.6127 16.3614 15.8566 16.333C16.2651 16.2853 16.3973 15.8372 16.6835 15.6032C16.9633 15.3744 17.3208 15.3714 17.6222 15.5621C17.9236 15.7528 18.2158 15.9576 18.5062 16.1646C18.7913 16.3677 19.0752 16.5665 19.3382 16.7981C19.5909 17.0207 19.678 17.3128 19.5356 17.6151ZM17.1629 13.3317C17.0488 13.3338 17.0936 13.3315 17.137 13.3303C16.9532 13.3238 16.8532 13.2156 16.8334 13.0397C16.819 12.9111 16.8076 12.7808 16.7769 12.6558C16.7165 12.4094 16.5856 12.1811 16.3784 12.0302C16.2806 11.9589 16.1697 11.9069 16.0536 11.8734C15.9061 11.8309 15.7529 11.8426 15.6057 11.8065C15.4459 11.7674 15.3575 11.6379 15.3826 11.488C15.4054 11.3515 15.5382 11.245 15.6873 11.2558C16.6192 11.3231 17.2853 11.8049 17.3803 12.902C17.387 12.9794 17.3949 13.0612 17.3777 13.1352C17.3498 13.2556 17.2638 13.3183 17.1768 13.3297C17.184 13.3298 17.1826 13.3304 17.1629 13.3317ZM16.5834 10.8224C16.2974 10.6824 15.9882 10.5954 15.6747 10.5435C15.5377 10.5209 15.3993 10.5071 15.2616 10.488C15.0948 10.4648 15.0058 10.3585 15.0137 10.1941C15.021 10.0401 15.1336 9.92928 15.3015 9.93875C15.8531 9.97009 16.3859 10.0893 16.8763 10.349C17.8736 10.8771 18.4433 11.7108 18.6096 12.8239C18.6172 12.8744 18.6292 12.9243 18.633 12.975C18.6425 13.0999 18.6484 13.225 18.658 13.3898C18.654 13.4198 18.6519 13.4904 18.6344 13.5569C18.5706 13.7982 18.2048 13.8284 18.1205 13.5849C18.0955 13.5126 18.0918 13.4304 18.0917 13.3525C18.0908 12.8434 17.9801 12.3348 17.7234 11.8919C17.4595 11.4367 17.0562 11.054 16.5834 10.8224ZM19.665 14.2627C19.4723 14.265 19.3856 14.1038 19.3731 13.931C19.3483 13.5889 19.3312 13.2454 19.284 12.9062C19.0352 11.1156 17.6074 9.63417 15.8251 9.31628C15.5569 9.26843 15.2824 9.25585 15.0108 9.22735C14.839 9.20931 14.6141 9.19891 14.576 8.98543C14.5441 8.80644 14.6952 8.66392 14.8656 8.65477C14.912 8.65227 14.9586 8.65438 15.0051 8.65458C17.3134 8.71929 15.146 8.65958 15.0113 8.65491C17.4122 8.72488 19.3834 10.3192 19.8062 12.6935C19.8782 13.0984 19.9039 13.5124 19.936 13.9234C19.9494 14.0962 19.8515 14.2604 19.665 14.2627Z"
@@ -1973,7 +2023,7 @@
                     fill="black" />
                 </svg>
               </a>
-              <a href="#">
+              <a href="http://t.me/Yellowgarage20">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z"
@@ -2021,32 +2071,30 @@
   </div>
 </body>
 <script>
-  $('#contacts-container-form').submit(function (e) {
+
+$('#reasons_for_work_form2').submit(function (e) {
     e.preventDefault()
     let countError = 0;
-    contactName = $('#name_contacts-input');
-    contactPhone = $('#phone_contacts-input');
 
     var data_json = {
-      "Город": $('#city_contacts-input').val(),
-      "Бюджет": $('#budget_contacts-input').val(),
-      "Сообщение": $('#message_contacts-input').val(),
-      "Цель": "получить обратную связь",
+      "Имя": $('#submit-form-input-name2').val(),
+      "Город": $('#submit-form-input-citi2').val(),
+      "Почта": $('#submit-form-input-email2').val(),
+      "Телефон": $('#submit-form-input-phone2').val(),
+      "Цель": "Создать франшизу",
 
     }
-
+    console.log(data_json)
     if (!countError) {
       $.ajax({
         url: '/post_contact.php',
         type: 'post',
         data: {
           subject: 'Форма заявки',
-          name: contactName.val(),
-          phone: contactPhone.val(),
           data_json: JSON.stringify(data_json)
         },
         success: function () {
-          $('#contacts-container-form input, textarea').val('')
+          $('#easons_for_work_form input').val('')
 
           $('.success').addClass("display-block")
 
@@ -2060,6 +2108,46 @@
         }
       });
     }
+
+  })
+
+  $('#reasons_for_work_form').submit(function (e) {
+    e.preventDefault()
+    let countError = 0;
+
+    var data_json = {
+      "Имя": $('#submit-form-input-name').val(),
+      "Город": $('#submit-form-input-citi').val(),
+      "Почта": $('#submit-form-input-email').val(),
+      "Телефон": $('#submit-form-input-phone').val(),
+      "Цель": "Создать франшизу",
+
+    }
+    console.log(data_json)
+    if (!countError) {
+      $.ajax({
+        url: '/post_contact.php',
+        type: 'post',
+        data: {
+          subject: 'Форма заявки',
+          data_json: JSON.stringify(data_json)
+        },
+        success: function () {
+          $('#easons_for_work_form input').val('')
+
+          $('.success').addClass("display-block")
+
+          setTimeout(function () {
+            $('.success').removeClass("display-block")
+
+          }, 3000)
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+          console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+      });
+    }
+
   })
 
 </script>

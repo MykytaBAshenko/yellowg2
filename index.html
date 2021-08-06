@@ -23,7 +23,9 @@
     box-sizing: border-box;
     text-decoration: none;
   }
-
+  html {
+  scroll-behavior: smooth;
+}
   body {
     background: #E5E5E5;
   }
@@ -222,7 +224,7 @@
     position: absolute;
     width: 470px;
     height: 100%;
-    z-index: 100;
+    z-index: 150;
     right: 0;
     max-height: 100vh;
     padding: 60px 100px;
@@ -380,13 +382,13 @@
               </div>
             </div>
             <div class="popup-menu-body-list">
-              <a href="#">О нас</a>
-              <a href="#">Финансы</a>
-              <a href="#">Почему мы?</a>
-              <a href="#">Поддержка</a>
-              <a href="#">Контакты</a>
+              <a href="#about1-block">О нас</a>
+              <a href="#franshiza-cifri">Финансы</a>
+              <a href="#join-part">Почему мы?</a>
+              <a href="#partner-help">Поддержка</a>
+              <a href="#footer">Контакты</a>
             </div>
-            <a class="popup-menu-body-make-zayva" href="#">Заполнить заявку</a>
+            <a class="popup-menu-body-make-zayva" href="#form-section">Заполнить заявку</a>
             <div class="popup-menu-body-meta-info">
               <div class="popup-menu-body-meta-info-element">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -456,6 +458,7 @@
           </div>
 
         </div>
+        
         <style>
           .elipse3{
             right: 87px;
@@ -581,6 +584,9 @@
         }
         videoBodyClose.onclick = videofn
         videopopup.onclick = videofn
+
+
+        // element1.addEventListener('click',doSomething2,false)
       </script>
       <script>
         let popup = document.getElementById("btn-popup")
@@ -599,6 +605,12 @@
         }
         popup.onclick = ccc
         closebtn.onclick = ccc
+        let popup_window = document.getElementById("popup-menu")
+        var popup_links = popup_window.getElementsByTagName('a');
+
+for (let i = 0; i < popup_links.length; ++i) {
+  popup_links[i].onclick = ccc
+}
       </script>
       <style>
         .about1-block-pc {
@@ -635,7 +647,7 @@
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
         }
       </style>
-      <div class="about1-block">
+      <div id="about1-block" class="about1-block">
         <div class="about1-block-pc">
           <div class="about1-block-pc-image">
             <img src="./img/IMG_4205.png" alt="">
@@ -901,7 +913,7 @@
         }
       </style>
 
-      <div class="franshiza-cifri">
+      <div id="franshiza-cifri" class="franshiza-cifri">
         <div class="franshiza-cifri-left">
           <div class="franshiza-cifri-left-container">
             <div class="franshiza-cifri-left-container-title">
@@ -1052,7 +1064,7 @@
           left: 20px;
         }
       </style>
-      <div class="form-section">
+      <div id="form-section" class="form-section">
         <img class="form-section-up" src="./img/form-up.png" alt="">
         <img class="form-section-down" src="./img/form-down.png" alt="">
 
@@ -1152,7 +1164,7 @@
           gap: 30px;
         }
       </style>
-      <div class="join-part">
+      <div id="join-part" class="join-part">
         <div class="join-part-body">
 
           <div class="join-part-body-head1">
@@ -1543,7 +1555,7 @@
           right: 48px;
         }
       </style>
-      <div class="partner-help">
+      <div id="partner-help" class="partner-help">
         <div class="partner-help-pc">
           <img class="partners-help-up" src="./img/partners-help-up.png" alt="">
           <img class="partners-help-down" src="./img/partners-help-down.png" alt="">
@@ -1935,7 +1947,7 @@
           left: 20px;
         }
       </style>
-      <div class="footer">
+      <div id="footer" class="footer">
         <img src="./img/footer-up.png" class="footer-up" alt="">
         <img src="./img/footer-bottom.png" class="footer-bottom" alt="">
         <div class="footer-content">

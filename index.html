@@ -23,9 +23,11 @@
     box-sizing: border-box;
     text-decoration: none;
   }
+
   html {
-  scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;
+  }
+
   body {
     background: #E5E5E5;
   }
@@ -88,6 +90,13 @@
     z-index: 1;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(./img/IMG_1969.png) center center no-repeat;
     background-size: cover;
+  }
+
+  @-moz-document url-prefix() {
+    .start-block-pc-content-left-bg-image {
+      filter: blur(10px);
+
+    }
   }
 
   .start-block-pc-content-left-bg {
@@ -348,7 +357,8 @@
     width: calc(100% - 140px);
     height: calc(100vh - 140px);
   }
-  .image-car-yellow{
+
+  .image-car-yellow {
     height: 150px;
   }
 </style>
@@ -422,7 +432,7 @@
                     fill="black" />
                 </svg>
               </a>
-              <a href="https://www.instagram.com/yellowgarage.co/?hl=ru">
+              <a href="https://www.instagram.com/yellowgarage.ua/?hl=ru">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.8711 15C17.8711 16.5857 16.5857 17.8711 15 17.8711C13.4143 17.8711 12.1289 16.5857 12.1289 15C12.1289 13.4143 13.4143 12.1289 15 12.1289C16.5857 12.1289 17.8711 13.4143 17.8711 15Z"
@@ -454,38 +464,42 @@
                 </svg>
               </a>
             </div>
-            <img class="popup-menu-meta-image" src="img/Logofull.svg"alt="">
+            <img class="popup-menu-meta-image" src="img/Logofull.svg" alt="">
           </div>
 
         </div>
-        
+
         <style>
-          .elipse3{
+          .elipse3 {
             right: 87px;
             bottom: 49px;
             position: absolute;
             z-index: 4;
           }
-          .elipse4{
+
+          .elipse4 {
             left: 142px;
             top: 66px;
             position: absolute;
             z-index: 4;
           }
-          .woerdstop{
+
+          .woerdstop {
             position: absolute;
             z-index: 4;
             top: 0;
             right: 375px;
           }
-          .Yellow{
+
+          .Yellow {
             position: absolute;
             z-index: 4;
             right: 0;
             bottom: 186px;
             transform: translate(100px, 0);
           }
-          .Garage{
+
+          .Garage {
             z-index: 4;
             right: 0;
             position: absolute;
@@ -583,8 +597,8 @@
           }
         }
         videoBodyClose.onclick = videofn
-        if(videopopup)
-        videopopup.onclick = videofn
+        if (videopopup)
+          videopopup.onclick = videofn
 
 
         // element1.addEventListener('click',doSomething2,false)
@@ -609,9 +623,9 @@
         let popup_window = document.getElementById("popup-menu")
         var popup_links = popup_window.getElementsByTagName('a');
 
-for (let i = 0; i < popup_links.length; ++i) {
-  popup_links[i].onclick = ccc
-}
+        for (let i = 0; i < popup_links.length; ++i) {
+          popup_links[i].onclick = ccc
+        }
       </script>
       <style>
         .about1-block-pc {
@@ -647,6 +661,22 @@ for (let i = 0; i < popup_links.length; ++i) {
           background-color: white;
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
         }
+
+        .about1-block-mobile {
+          display: none;
+        }
+
+        @media (max-width: 1150px) {
+          .about1-block-pc {
+            display: none;
+          }
+
+          .about1-block-mobile {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 15px;
+          }
+        }
       </style>
       <div id="about1-block" class="about1-block">
         <div class="about1-block-pc">
@@ -662,7 +692,7 @@ for (let i = 0; i < popup_links.length; ++i) {
             </div>
 
             <div class="about1-block-pc-content-meta-image">
-              <img src="./img/Group 1.png" alt="">
+              <img src="./img/Group1.png" alt="">
             </div>
           </div>
           <div class="about1-block-pc-image">
@@ -672,6 +702,17 @@ for (let i = 0; i < popup_links.length; ++i) {
         </div>
 
         <div class="about1-block-mobile">
+          <div class="about1-block-mobile-text">
+            Компания YELLOW GARAGE является партнером международной логистической компании "Lion Trans" -
+            единственного
+            официального представителя аукциона IAАI в Украине.
+          </div>
+          <div class="about1-block-mobile-content">
+            <img src="./img/IMG_4205.png" alt="">
+            <img src="./img/Group1.png" alt="">
+            <img src="./img/IMG_9619.png" alt="">
+
+          </div>
         </div>
       </div>
       <style>
@@ -760,12 +801,18 @@ for (let i = 0; i < popup_links.length; ++i) {
           right: 50px;
           top: 0;
         }
+
+        .about2-block-mobile {
+          display: none;
+        }
+
+
+        /* about2-block */
       </style>
       <div class="about2-block">
         <div class="about2-block-pc">
           <img class="yellowcifri-up" src="img/yellowcifri-up.png" alt="">
           <img class="yellowcifri-down" src="img/yellowcifri-down.png" alt="">
-
           <img class="about2-block-pc-staff-wheel" src="./img/car_wheel_PNG233071.png" alt="">
           <div class="about2-block-pc-header">
             YELLOW GARAGE в цифрах
@@ -801,6 +848,143 @@ for (let i = 0; i < popup_links.length; ++i) {
             процессов на всех этапах.
           </div>
         </div>
+        <style>
+          .yellowcifri-up-m {
+            display: none;
+          }
+
+          .yellowcifri-down-m {
+            display: none;
+          }
+
+          @media (max-width: 1300px) {
+            .about2-block-pc {
+              display: none;
+            }
+
+            .about2-block-mobile {
+              display: flex;
+              align-items: center;
+              position: relative;
+              padding: 30px 15px;
+              flex-direction: column;
+            }
+
+            .yellowcifri-up-m {
+              position: absolute;
+              display: block;
+              top: 0;
+              right: 10px;
+            }
+
+            .yellowcifri-down-m {
+              position: absolute;
+              bottom: 0;
+              display: block;
+              left: 10px;
+            }
+
+            .about2-block-pc-staff-wheel-m {
+              position: absolute;
+              left: 0;
+              top: -50px;
+            }
+
+            .about2-block-mobile-header {
+              font-weight: bold;
+              font-size: 18px;
+              text-transform: uppercase;
+              text-align: center;
+              line-height: 150%;
+              width: 200px;
+            }
+
+            .about2-block-mobile-body-center-image {
+              margin: 20px 20px;
+              position: relative;
+              border: 10px solid #FFCC00;
+              height: 150px;
+              min-width: 150px;
+              border-radius: 50%;
+            }
+
+            .about2-block-mobile-body-center-image img {
+              width: 102%;
+              height: 102%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+
+            .about2-block-mobile-body-text {
+              display: flex;
+              align-items: center;
+              text-align: center;
+              flex-direction: column;
+              margin-bottom: 30px;
+            }
+
+            .about2-block-mobile-body-text-header {
+              font-weight: bold;
+              font-size: 24px;
+              margin-bottom: 10px;
+              line-height: 150%;
+              width: 260px;
+              font-style: normal;
+            }
+
+            .about2-block-mobile-body-text-body {
+              max-width: 261px;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 150%;
+
+            }
+
+            .about2-block-mobile-footer {
+              max-width: 330px;
+              text-align: center;
+            }
+          }
+        </style>
+        <div class="about2-block-mobile">
+          <img class="yellowcifri-up-m" src="img/yellowcifri-up-m.png" alt="">
+          <img class="yellowcifri-down-m" src="img/yellowcifri-down-m.png" alt="">
+          <img class="about2-block-pc-staff-wheel-m" src="./img/car_wheel_PNG23307.png" alt="">
+          <div class="about2-block-mobile-header">
+            YELLOW GARAGE в цифрах
+
+          </div>
+          <div class="about2-block-mobile-body-center-image">
+            <img src="./img/MaskGroup.png" />
+          </div>
+
+          <div class="about2-block-mobile-body-text">
+            <div class="about2-block-mobile-body-text-header">
+              72 млн $
+
+            </div>
+            <div class="about2-block-mobile-body-text-body">
+              ежегодно тратят украинцы на приобретение авто в компании Yellow Garage
+            </div>
+          </div>
+
+          <div class="about2-block-mobile-body-text">
+            <div class="about2-block-mobile-body-text-header">
+              от 500 машин в месяц
+
+            </div>
+            <div class="about2-block-mobile-body-text-body">
+              компания выкупает на <br> аукционах
+
+            </div>
+          </div>
+          <div class="about2-block-mobile-footer">
+            Такие результаты - это показатель доверия клиентов, которого мы достигли благодаря качественной реализации
+            процессов на всех этапах.
+          </div>
+        </div>
       </div>
 
       <style>
@@ -821,8 +1005,15 @@ for (let i = 0; i < popup_links.length; ++i) {
           width: 100%;
           height: 100%;
           z-index: 1;
-          background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/IMG_7583.png");
+          background: url("./img/IMG_7583.png");
           background-size: cover;
+        }
+
+        @-moz-document url-prefix() {
+          .franshiza-cifri-right-bg-image {
+            filter: blur(10px);
+
+          }
         }
 
         .franshiza-cifri-right-bg {
@@ -833,7 +1024,7 @@ for (let i = 0; i < popup_links.length; ++i) {
           position: absolute;
           backdrop-filter: blur(10px);
           height: 100%;
-          /* background-color: rgba(0, 0, 0, 0.8); */
+          background-color: rgba(0, 0, 0, 0.5);
         }
 
         .franshiza-cifri-right-body {
@@ -876,6 +1067,7 @@ for (let i = 0; i < popup_links.length; ++i) {
         .franshiza-cifri-left {
           width: 100%;
           display: flex;
+          padding: 30px;
           align-items: center;
           justify-content: center;
           background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("img/IMG_7583.png")center center no-repeat;
@@ -897,6 +1089,7 @@ for (let i = 0; i < popup_links.length; ++i) {
           line-height: 150%;
           max-width: 450px;
           color: white;
+          text-transform: uppercase;
         }
 
         .franshiza-cifri-left-container-aftertitle {
@@ -911,6 +1104,47 @@ for (let i = 0; i < popup_links.length; ++i) {
           font-weight: 500;
           font-size: 18px;
           line-height: 150%;
+        }
+
+
+
+        @media (max-width: 1250px) {
+          .franshiza-cifri {
+            height: 100%;
+            grid-template-columns: 1fr;
+          }
+
+          .franshiza-cifri-right {
+            max-width: 100%;
+          }
+
+          .franshiza-cifri-right-body {
+            flex-direction: column;
+            padding: 30px;
+          }
+
+          .franshiza-cifri-right-body div {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 18px;
+            margin: 0;
+            line-height: 150%;
+            text-align: center;
+          }
+
+          .franshiza-cifri-right-body {
+            position: relative;
+            gap: 20px;
+          }
+
+          .franshiza-cifri-left-container-title {
+            font-size: 18px;
+          }
         }
       </style>
 
@@ -983,22 +1217,22 @@ for (let i = 0; i < popup_links.length; ++i) {
         .submit-form-title::after {
           content: "";
           position: absolute;
-          width: 150px;
+          width: 40px;
           height: 2px;
           background-color: #FFCC00;
           top: 50%;
-          transform: translate(-180px, -50%);
+          transform: translate(-70px, -50%);
           left: 0;
         }
 
         .submit-form-title::before {
           content: "";
           position: absolute;
-          width: 150px;
+          width: 40px;
           height: 2px;
           background-color: #FFCC00;
           top: 50%;
-          transform: translate(180px, -50%);
+          transform: translate(70px, -50%);
           right: 0;
         }
 
@@ -1064,11 +1298,45 @@ for (let i = 0; i < popup_links.length; ++i) {
           bottom: 0;
           left: 20px;
         }
+
+        @media (max-width: 1300px) {
+          .form-section-up {
+            display: none;
+          }
+
+          .form-section-down {
+            display: none;
+          }
+
+          .submit-form-control {
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          .submit-form-control input {
+            max-width: 330px;
+          }
+
+          .submit-form-control button {
+            max-width: 220px;
+          }
+
+          .submit-form-trashmeta {
+            margin-top: 15px;
+            color: #333333;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 150%;
+            max-width: 300px;
+            text-align: center;
+          }
+        }
       </style>
       <div id="form-section" class="form-section">
         <img class="form-section-up" src="./img/form-up.png" alt="">
         <img class="form-section-down" src="./img/form-down.png" alt="">
-
+        <img class="yellowcifri-up-m" src="img/yellowcifri-up-m.png" alt="">
+        <img class="yellowcifri-down-m" src="img/yellowcifri-down-m.png" alt="">
         <form id="reasons_for_work_form2" class="submit-form">
           <div class="submit-form-title">
             Интересует франшиза?
@@ -1079,8 +1347,8 @@ for (let i = 0; i < popup_links.length; ++i) {
           <div class="submit-form-control-shell">
 
             <div class="submit-form-control">
-              <input id="submit-form-input-name2" placeholder="Имя"  required>
-              <input id="submit-form-input-citi2" placeholder="Город"  required>
+              <input id="submit-form-input-name2" placeholder="Имя" required>
+              <input id="submit-form-input-citi2" placeholder="Город" required>
               <input id="submit-form-input-email2" placeholder="E-mail" required>
               <input id="submit-form-input-phone2" placeholder="Телефон" required>
               <button type="submit">Отправить</button>
@@ -1247,6 +1515,13 @@ for (let i = 0; i < popup_links.length; ++i) {
           /* background-color: rgba(0, 0, 0, 0.8); */
         }
 
+        @-moz-document url-prefix() {
+          .main-point-block-bg-image {
+            filter: blur(5px);
+
+          }
+        }
+
         .main-point-block {
           height: 500px;
           position: relative;
@@ -1283,6 +1558,36 @@ for (let i = 0; i < popup_links.length; ++i) {
           right: 50px;
           top: -72px;
         }
+
+        .main-point-block-key-m {
+          display: none;
+        }
+
+        @media (max-width: 1200px) {
+          .main-point-block-key-m {
+            display: block;
+            position: absolute;
+            right: 0;
+            z-index: 6;
+            top: -25px;
+          }
+
+          .main-point-block-key {
+            display: none;
+          }
+
+          .main-point-block-text-inner {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 150%;
+            max-width: 530px;
+
+          }
+
+          .main-point-block {
+            height: 215px;
+          }
+        }
       </style>
       <div class="main-point-block">
         <div class="main-point-block-bg-image">
@@ -1290,6 +1595,8 @@ for (let i = 0; i < popup_links.length; ++i) {
         <div class="main-point-block-bg">
         </div>
         <img class="main-point-block-key" src="./img/keys1.png" alt="">
+        <img class="main-point-block-key-m" src="./img/keys_mobile.png" alt="">
+
         <div class="main-point-block-text">
           <div class="main-point-block-text-inner">
 
@@ -1677,7 +1984,12 @@ for (let i = 0; i < popup_links.length; ++i) {
           position: absolute;
           backdrop-filter: blur(10px);
           height: 100%;
-          /* background-color: rgba(0, 0, 0, 0.8); */
+        }
+
+        @-moz-document url-prefix() {
+          .calculator-bg-image {
+            filter: blur(5px);
+          }
         }
 
         .calculator-body {
@@ -1830,6 +2142,8 @@ for (let i = 0; i < popup_links.length; ++i) {
           line-height: 150%;
           font-weight: 500;
         }
+
+        @media (max-width: 900px) {}
       </style>
       <div class="calculator">
         <div class="calculator-bg"></div>
@@ -1897,7 +2211,7 @@ for (let i = 0; i < popup_links.length; ++i) {
         .footer-meta-info-element {
           display: flex;
           width: 200px;
-          justify-content: flex-start;  
+          justify-content: flex-start;
         }
 
         .footer-meta-info-element svg {
@@ -1947,10 +2261,85 @@ for (let i = 0; i < popup_links.length; ++i) {
           bottom: -16px;
           left: 20px;
         }
+
+        .footer-down-m {
+            display: none;
+          }
+        .footer-up-m {
+            display: none;
+          }
+        @media (max-width: 1300px) {
+          .footer-meta-b1 {
+            grid-area: footer-meta-b1;
+          }
+
+          .footer-meta-b2 {
+            grid-area: footer-meta-b2;
+          }
+
+          .footer-meta-image {
+            grid-area: footer-meta-image;
+          }
+
+          .footer-meta {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            justify-items: center;
+            grid-template-areas: "footer-meta-b1"
+              "footer-meta-b2"
+              "footer-meta-image";
+
+            gap: 25px;
+          }
+
+          .footer-meta-info {
+            justify-self: center;
+          }
+
+          .footer-meta-links a:last-child {
+            margin: 0;
+
+          }
+
+          .footer-meta-info-text {
+            font-size: 18px;
+          }
+
+          .footer-meta-info-element {
+            width: 210px;
+          }
+
+          .footer-meta {
+            margin-top: 25px;
+          }
+
+          .footer-up {
+            display: none;
+          }
+
+          .footer-bottom {
+            display: none;
+          }
+
+          .footer-down-m {
+            display: block;
+            position: absolute;
+            bottom: 2px;
+            left: 10px;
+          }
+        .footer-up-m {
+          display: block;
+            position: absolute;
+            top: 2px;
+            right: 10px;}
+        }
       </style>
       <div id="footer" class="footer">
         <img src="./img/footer-up.png" class="footer-up" alt="">
         <img src="./img/footer-bottom.png" class="footer-bottom" alt="">
+        <img src="./img/footer-down-m.png" class="footer-down-m" alt="">
+        <img src="./img/footer-up-m.png" class="footer-up-m" alt="">
+
         <div class="footer-content">
           <form id="reasons_for_work_form" class="submit-form">
             <div class="submit-form-title">
@@ -1976,7 +2365,7 @@ for (let i = 0; i < popup_links.length; ++i) {
             </div>
           </form>
           <div class="footer-meta">
-            <div class="footer-meta-info">
+            <div class="footer-meta-info footer-meta-b1">
               <div class="footer-meta-info-element">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -2003,8 +2392,8 @@ for (let i = 0; i < popup_links.length; ++i) {
             </div>
 
 
-            <img src="img/Logofull.svg" class="image-car-yellow" alt="">
-            <div class="footer-meta-links">
+            <img src="img/Logofull.svg" class="image-car-yellow footer-meta-image" alt="">
+            <div class="footer-meta-links footer-meta-b2">
               <a href="https://www.facebook.com/yellowgarage.co">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -2012,7 +2401,7 @@ for (let i = 0; i < popup_links.length; ++i) {
                     fill="black" />
                 </svg>
               </a>
-              <a href="https://www.instagram.com/yellowgarage.co/?hl=ru">
+              <a href="https://www.instagram.com/yellowgarage.ua/?hl=ru">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M17.8711 15C17.8711 16.5857 16.5857 17.8711 15 17.8711C13.4143 17.8711 12.1289 16.5857 12.1289 15C12.1289 13.4143 13.4143 12.1289 15 12.1289C16.5857 12.1289 17.8711 13.4143 17.8711 15Z"
@@ -2085,7 +2474,7 @@ for (let i = 0; i < popup_links.length; ++i) {
 </body>
 <script>
 
-$('#reasons_for_work_form2').submit(function (e) {
+  $('#reasons_for_work_form2').submit(function (e) {
     e.preventDefault()
     let countError = 0;
 

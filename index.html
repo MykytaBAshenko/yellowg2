@@ -26,9 +26,11 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
+    overflow-x: hidden;
     background: #E5E5E5;
   }
 
@@ -640,7 +642,7 @@
             .start-block-mobile {
               display: block;
               position: relative;
-              height: 500px;
+              height: 463px;
             }
 
             .start-block-mobile-content-left-bg-image {
@@ -715,8 +717,9 @@
             .start-block-mobile-content-left-body-text1 {
               font-weight: bold;
               font-size: 18px;
+              max-width: 450px;
               color: white;
-              margin-top: 50px;
+              margin: 50px auto;
               text-align: center;
               line-height: 150%;
             }
@@ -760,16 +763,20 @@
               width: 100%;
               height: 100vh;
             }
-            .popup-menu-body-head-click{
+
+            .popup-menu-body-head-click {
               flex-direction: row-reverse;
             }
-            .popup-menu-body-head-click-text{
+
+            .popup-menu-body-head-click-text {
               margin: 0 0 0 10px;
             }
-            .overflow-hidden-mobile{
+
+            .overflow-hidden-mobile {
               overflow: hidden;
             }
-            .popup-menu-meta-image{
+
+            .popup-menu-meta-image {
               display: block;
               position: absolute;
               left: 50%;
@@ -777,31 +784,37 @@
               margin: 0;
               transform: translate(-50%, 0);
             }
-            .popup-menu-body-head{
+
+            .popup-menu-body-head {
               height: 80px;
-display: flex;
-align-items: center;
-margin: 0 0 30px 0;
-align-self: flex-start;
+              display: flex;
+              align-items: center;
+              margin: 0 0 30px 0;
+              align-self: flex-start;
             }
-            .popup-menu-body-list{
+
+            .popup-menu-body-list {
               gap: 15px;
               font-style: normal;
-font-weight: 500;
-font-size: 18px;
+              font-weight: 500;
+              font-size: 18px;
             }
-            .popup-menu-body-list a{
+
+            .popup-menu-body-list a {
               font-style: normal;
-font-weight: 500;
-font-size: 18px;
+              font-weight: 500;
+              font-size: 18px;
             }
-            .popup-menu-body-make-zayva{
+
+            .popup-menu-body-make-zayva {
               margin-top: 30px;
             }
-            .popup-menu-body-meta-info{
+
+            .popup-menu-body-meta-info {
               margin-top: 30px;
             }
-            .popup-menu-meta-links{
+
+            .popup-menu-meta-links {
               margin-top: 30px;
             }
           }
@@ -809,6 +822,19 @@ font-size: 18px;
           /* #partner-help {
             display: none;
           } */
+          .Ellipse33{
+            position: absolute;
+            top: 67px;
+            z-index: 9;
+
+            left: 15px;
+          }
+          .Ellipse32{
+            position: absolute;
+            top: 191px;
+            z-index: 9;
+            right: 18px;
+          }
         </style>
         <div class="start-block-mobile">
           <div class="start-block-mobile-content-left-bg-image">
@@ -817,6 +843,8 @@ font-size: 18px;
           </div>
           <img src="./img/Group30.png" class="woerdstop-m" alt="">
           <img src="./img/Logofull.svg" class="logofull-header" alt="">
+          <img src="./img/Ellipse33.png" class="Ellipse33" alt="">
+          <img src="./img/Ellipse32.png" class="Ellipse32" alt="">
 
 
           <div class="start-block-mobile-content-left-body">
@@ -2103,7 +2131,7 @@ font-size: 18px;
             padding: 20px 15px 0;
             gap: 20px;
             position: relative;
-            justify-content: space-between;
+            justify-content: space-around;
           }
 
           .open-steps-mobile-row::before {
@@ -2112,7 +2140,6 @@ font-size: 18px;
             top: 35px;
             height: 1px;
             width: 100%;
-            transform: translate(-15px, 0);
             background-color: #E3E3E3;
           }
 
@@ -2147,15 +2174,16 @@ font-size: 18px;
             position: absolute;
             content: "";
             left: 0;
-            width: 15px;
+            width: 300px;
             height: 5px;
+            transform: translate(-300px, 0);
             background-color: white;
-            top: 35px;
+            top: 13px;
           }
 
           .open-steps-mobile-row-elemnt-head2::before {
             content: "";
-            width: calc(100% + 15px);
+            width: calc(200%);
             height: 4px;
             position: absolute;
             top: 15px;
@@ -2176,8 +2204,8 @@ font-size: 18px;
             Этапы открытия
           </div>
           <div class="open-steps-mobile-rowdash">
-            <div class="open-steps-mobile-row open-steps-mobile-row-elemnt-head1">
-              <div class="open-steps-mobile-row-elemnt">
+            <div class="open-steps-mobile-row">
+              <div class="open-steps-mobile-row-elemnt-head1 open-steps-mobile-row-elemnt">
                 <div class=" open-steps-mobile-row-elemnt-head">
                   1
                 </div>
@@ -2559,12 +2587,168 @@ font-size: 18px;
             </div>
           </div>
         </div>
+        <style>
+          .partner-help-mobile {
+            display: none;
+          }
+
+          @media (max-width: 1600px) {
+            .partners-help-up {
+              display: none;
+            }
+
+            .partners-help-down {
+              display: none;
+            }
+          }
+
+          @media (max-width: 1100px) {
+            .partner-help-pc {
+              display: none;
+            }
+
+            .partner-help-mobile {
+              display: block;
+              padding: 30px 15px;
+              position: relative;
+            }
+
+            .partners-help-up-m {
+              top: 3px;
+              right: 10px;
+              position: absolute;
+            }
+
+            .partners-help-down-m {
+              bottom: 3px;
+              left: 10px;
+              position: absolute;
+            }
+
+            .partner-help-mobile-title {
+              font-weight: bold;
+              font-size: 18px;
+              margin-bottom: 20px;
+              line-height: 150%;
+              text-align: center;
+            }
+
+            .partner-help-pc-dashboards-dashboard-item {
+              flex-direction: column;
+            }
+
+            .partner-help-pc-dashboards-dashboard-item-index {
+              margin: 0 0 5px;
+            }
+
+            .partner-help-pc-dashboards-dashboard-item-text {
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 150%;
+
+              text-align: center;
+            }
+
+            .partner-help-pc-dashboards-dashboard-item {
+              margin-bottom: 20px;
+            }
+
+            .partner-help-pc-dashboards-dashboard {
+              padding: 20px 15px;
+            }
+          }
+        </style>
         <div class="partner-help-mobile">
-          <img class="partners-help-up-m" src="./img/partners-help-up.png" alt="">
-          <img class="partners-help-down-m" src="./img/partners-help-down.png" alt="">
+          <img class="partners-help-up-m" src="./img/partners-mob.png" alt="">
+          <img class="partners-help-down-m" src="./img/partners-mobdown.png" alt="">
 
           <div class="partner-help-mobile-title">
             Поддержка партнеров после открытия
+          </div>
+          <div class="partner-help-pc-dashboards-dashboard">
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                01.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Предоставляем учетные записи для участия на аукционах (IAAI, Copart, Manheim, закрытые аукционы)
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                02.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Предоставляем личного менеджера, осуществляем постоянную поддержку и сопровождение на всех этапах до
+                получения машины в порту назначения)
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                03.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Предоставляем личного финансового менеджера
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                04.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Создаем для вас индивидуальную базу (с фото и видео автомобилей, документами, номерами контейнеров,
+                ссылкой для отслеживания местонахождения автомобиля в конкретный момент времени)
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                05.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Создаем личные кабинеты для ваших клиентов, где они смогут получать актуальную информацию о купленных
+                ими автомобилях
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                06.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Предоставляем доступ к CARFAX
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                07.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Даем доступ к базе поставщиков запчастей
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                08.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Даем контакты партнерских СТО в разных городах Украины
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                09.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Предоставляем услуги эвакуаторов и автовозов
+              </div>
+            </div>
+            <div class="partner-help-pc-dashboards-dashboard-item">
+              <div class="partner-help-pc-dashboards-dashboard-item-index">
+                10.
+              </div>
+              <div class="partner-help-pc-dashboards-dashboard-item-text">
+                Проводим тренинги по организации работы каждые 3 месяца
+              </div>
+            </div>
           </div>
         </div>
       </div>

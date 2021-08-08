@@ -22,6 +22,8 @@ if (videopopup)
 // element1.addEventListener('click',doSomething2,false)
 
 let bbbb2 = document.getElementById("body")
+let hhhh2 = document.getElementById("html")
+
 let popup = document.getElementById("btn-popup")
 let mob_btn = document.getElementById("click-btn-mobile")
 let closebtn = document.getElementById("popup-menu-body-head-click")
@@ -30,11 +32,12 @@ const ccc = () => {
     document.getElementById("popup-menu").classList.remove("active");
     popup.classList.remove("display-none")
     bbbb2.classList.remove("overflow-hidden-mobile")
-
+    hhhh2.classList.remove("overflow-hidden-mobile")
   }
   else {
     popup.classList.add("display-none")
     bbbb2.classList.add("overflow-hidden-mobile")
+    hhhh2.classList.add("overflow-hidden-mobile")
 
     document.getElementById("popup-menu").classList.add("active");
   }
@@ -68,80 +71,80 @@ slider.oninput = function () {
 
 
 
-  $('#reasons_for_work_form2').submit(function (e) {
-    e.preventDefault()
-    let countError = 0;
+$('#reasons_for_work_form2').submit(function (e) {
+  e.preventDefault()
+  let countError = 0;
 
-    var data_json = {
-      "Имя": $('#submit-form-input-name2').val(),
-      "Город": $('#submit-form-input-citi2').val(),
-      "Почта": $('#submit-form-input-email2').val(),
-      "Телефон": $('#submit-form-input-phone2').val(),
-      "Цель": "Создать франшизу",
+  var data_json = {
+    "Имя": $('#submit-form-input-name2').val(),
+    "Город": $('#submit-form-input-citi2').val(),
+    "Почта": $('#submit-form-input-email2').val(),
+    "Телефон": $('#submit-form-input-phone2').val(),
+    "Цель": "Создать франшизу",
 
-    }
-    if (!countError) {
-      $.ajax({
-        url: '/post_contact.php',
-        type: 'post',
-        data: {
-          subject: 'Форма заявки',
-          data_json: JSON.stringify(data_json)
-        },
-        success: function () {
-          $('#easons_for_work_form input').val('')
+  }
+  if (!countError) {
+    $.ajax({
+      url: '/post_contact.php',
+      type: 'post',
+      data: {
+        subject: 'Форма заявки',
+        data_json: JSON.stringify(data_json)
+      },
+      success: function () {
+        $('#easons_for_work_form input').val('')
 
-          $('.success').addClass("display-block")
+        $('.success').addClass("display-block")
 
-          setTimeout(function () {
-            $('.success').removeClass("display-block")
+        setTimeout(function () {
+          $('.success').removeClass("display-block")
 
-          }, 3000)
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
-          console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-        }
-      });
-    }
+        }, 3000)
+      },
+      error: function (xhr, ajaxOptions, thrownError) {
+        console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+      }
+    });
+  }
 
-  })
+})
 
-  $('#reasons_for_work_form').submit(function (e) {
-    e.preventDefault()
-    let countError = 0;
+$('#reasons_for_work_form').submit(function (e) {
+  e.preventDefault()
+  let countError = 0;
 
-    var data_json = {
-      "Имя": $('#submit-form-input-name').val(),
-      "Город": $('#submit-form-input-citi').val(),
-      "Почта": $('#submit-form-input-email').val(),
-      "Телефон": $('#submit-form-input-phone').val(),
-      "Цель": "Создать франшизу",
+  var data_json = {
+    "Имя": $('#submit-form-input-name').val(),
+    "Город": $('#submit-form-input-citi').val(),
+    "Почта": $('#submit-form-input-email').val(),
+    "Телефон": $('#submit-form-input-phone').val(),
+    "Цель": "Создать франшизу",
 
-    }
-    console.log(data_json)
-    if (!countError) {
-      $.ajax({
-        url: '/post_contact.php',
-        type: 'post',
-        data: {
-          subject: 'Форма заявки',
-          data_json: JSON.stringify(data_json)
-        },
-        success: function () {
-          $('#easons_for_work_form input').val('')
+  }
+  console.log(data_json)
+  if (!countError) {
+    $.ajax({
+      url: '/post_contact.php',
+      type: 'post',
+      data: {
+        subject: 'Форма заявки',
+        data_json: JSON.stringify(data_json)
+      },
+      success: function () {
+        $('#easons_for_work_form input').val('')
 
-          $('.success').addClass("display-block")
+        $('.success').addClass("display-block")
 
-          setTimeout(function () {
-            $('.success').removeClass("display-block")
+        setTimeout(function () {
+          $('.success').removeClass("display-block")
 
-          }, 3000)
-        },
-        error: function (xhr, ajaxOptions, thrownError) {
-          console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
-        }
-      });
-    }
+        }, 3000)
+      },
+      error: function (xhr, ajaxOptions, thrownError) {
+        console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+      }
+    });
+  }
 
-  })
+})
 

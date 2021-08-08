@@ -53,7 +53,7 @@
   }
 
   .start-block-pc-content-right {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(./img/IMG_1969.png);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(./img/IMG_1969.png) center center no-repeat;
     height: 100%;
     display: grid;
     padding: 60px 100px 0 0;
@@ -221,6 +221,7 @@
 
   .content-body {
     max-width: 2220px;
+    width: 100%;
     background-color: white;
   }
 
@@ -420,7 +421,7 @@
                 </svg>
 
                 <div class="popup-menu-body-meta-info-text">
-                  info@ygshipping.com
+                  0 800 331 011
                 </div>
               </div>
             </div>
@@ -507,6 +508,24 @@
             transform: translate(18px, 0);
 
           }
+
+          @media (max-width: 1650px) {
+            .start-block-pc-content {
+              grid-template-columns: 1fr 470px;
+            }
+
+            .start-block-pc-content-left-body-main-title {
+              font-size: 30px;
+            }
+
+            .start-block-pc-content {
+              height: 850px;
+            }
+
+            .popup-menu-meta-image {
+              display: none;
+            }
+          }
         </style>
         <div class="start-block-pc">
           <div class="start-block-pc-content">
@@ -540,7 +559,7 @@
                   </div>
 
 
-                  <a href="#" class="start-block-pc-content-left-body-main-link">
+                  <a href="#about2-block" class="start-block-pc-content-left-body-main-link">
                     Подробнее
                   </a>
                 </div>
@@ -575,9 +594,251 @@
 
           </div>
         </div>
+        <style>
+          @media (max-width: 1350px) {
+            .start-block-pc-content {
+              grid-template-columns: 1fr;
+            }
 
+            #btn-popup {
+              display: none;
+            }
+
+            .start-block-pc-content-right {
+              display: none;
+              background-size: cover;
+            }
+
+            .Yellow {
+              display: none;
+            }
+
+            .Garage {
+              display: none;
+            }
+
+            .start-block-pc-content-left-body {
+              height: 500px;
+            }
+
+            .start-block-pc-content-left {
+              height: 500px;
+            }
+
+            .start-block-pc-content {
+              height: auto;
+            }
+
+            .woerdstop {
+              display: none;
+            }
+
+            .start-block-pc {
+              display: none;
+            }
+
+            .start-block-mobile {
+              display: block;
+              position: relative;
+              height: 500px;
+            }
+
+            .start-block-mobile-content-left-bg-image {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: 1;
+              background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url(./img/IMG_1969.png) center center no-repeat;
+              background-size: cover;
+            }
+
+            @-moz-document url-prefix() {
+              .start-block-pc-content-left-bg-image {
+                filter: blur(10px);
+
+              }
+            }
+
+            .start-block-mobile-content-left-bg {
+              width: 100%;
+              z-index: 2;
+              position: absolute;
+              backdrop-filter: blur(20px);
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.8);
+            }
+
+            .woerdstop-m {
+              position: absolute;
+              right: 15px;
+              top: 0;
+              z-index: 3;
+            }
+
+            .start-block-mobile-content-left-body-header {
+              display: flex;
+              height: 80px;
+              justify-content: center;
+              flex-direction: column;
+            }
+
+            .start-block-mobile-content-left-body-header img {
+              margin-right: 15px;
+            }
+
+            .start-block-mobile-content-left-body {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              padding: 20px 15px;
+              z-index: 10;
+            }
+
+            .start-block-mobile-content-left-body-header-btn {
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 150%;
+              color: white;
+            }
+
+            .logofull-header {
+              height: 80px;
+              position: absolute;
+              left: 50%;
+              z-index: 11;
+              transform: translate(-50%, 20px);
+            }
+
+            .start-block-mobile-content-left-body-text1 {
+              font-weight: bold;
+              font-size: 18px;
+              color: white;
+              margin-top: 50px;
+              text-align: center;
+              line-height: 150%;
+            }
+
+            .start-block-mobile-content-left-body-text1 span {
+              color: #FFCC00;
+            }
+
+            .start-block-mobile-content-left-body-text2 {
+              font-weight: 500;
+              font-size: 16px;
+              text-align: center;
+              color: white;
+              max-width: 300px;
+              align-self: center;
+              justify-self: center;
+              margin: 15px auto 40px;
+              line-height: 150%;
+            }
+
+            .start-block-mobile-content-left-body-main-link {
+              margin: 0 auto;
+              width: 220px;
+              height: 40px;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 18px;
+              line-height: 150%;
+
+
+              color: #000000;
+
+              background: #FFCC00;
+              border-radius: 5px;
+            }
+
+            .popup-menu {
+              padding: 20px 15px;
+              width: 100%;
+              height: 100vh;
+            }
+            .popup-menu-body-head-click{
+              flex-direction: row-reverse;
+            }
+            .popup-menu-body-head-click-text{
+              margin: 0 0 0 10px;
+            }
+            .overflow-hidden-mobile{
+              overflow: hidden;
+            }
+            .popup-menu-meta-image{
+              display: block;
+              position: absolute;
+              left: 50%;
+              top: 20px;
+              margin: 0;
+              transform: translate(-50%, 0);
+            }
+            .popup-menu-body-head{
+              height: 80px;
+display: flex;
+align-items: center;
+margin: 0 0 30px 0;
+align-self: flex-start;
+            }
+            .popup-menu-body-list{
+              gap: 15px;
+              font-style: normal;
+font-weight: 500;
+font-size: 18px;
+            }
+            .popup-menu-body-list a{
+              font-style: normal;
+font-weight: 500;
+font-size: 18px;
+            }
+            .popup-menu-body-make-zayva{
+              margin-top: 30px;
+            }
+            .popup-menu-body-meta-info{
+              margin-top: 30px;
+            }
+            .popup-menu-meta-links{
+              margin-top: 30px;
+            }
+          }
+
+          /* #partner-help {
+            display: none;
+          } */
+        </style>
         <div class="start-block-mobile">
+          <div class="start-block-mobile-content-left-bg-image">
+          </div>
+          <div class="start-block-mobile-content-left-bg">
+          </div>
+          <img src="./img/Group30.png" class="woerdstop-m" alt="">
+          <img src="./img/Logofull.svg" class="logofull-header" alt="">
 
+
+          <div class="start-block-mobile-content-left-body">
+            <div class="start-block-mobile-content-left-body-header">
+              <div class="start-block-mobile-content-left-body-header-btn" id="click-btn-mobile">
+                <img src="./img/menu3mob.png" alt="">
+                <div class="start-block-mobile-content-left-body-header-text">Меню</div>
+              </div>
+
+            </div>
+            <div class="start-block-mobile-content-left-body-text1">
+              ФРАНШИЗА БИЗНЕСА ПО ДОСТАВКЕ АВТОМОБИЛЕЙ ИЗ США
+              <span>YELLOW GARAGE</span>
+
+            </div>
+            <div class="start-block-mobile-content-left-body-text2">
+              Открывай бизнес с лидером рынка доставки автомобилей в Украине
+            </div>
+            <a href="#about2-block" class="start-block-mobile-content-left-body-main-link">
+              Подробнее
+            </a>
+          </div>
         </div>
       </div>
       <script>
@@ -604,20 +865,25 @@
         // element1.addEventListener('click',doSomething2,false)
       </script>
       <script>
+        let bbbb2 = document.getElementById("body")
         let popup = document.getElementById("btn-popup")
-
+        let mob_btn = document.getElementById("click-btn-mobile")
         let closebtn = document.getElementById("popup-menu-body-head-click")
         const ccc = () => {
           if (document.getElementById("popup-menu").classList.contains("active")) {
             document.getElementById("popup-menu").classList.remove("active");
             popup.classList.remove("display-none")
+            bbbb2.classList.remove("overflow-hidden-mobile")
 
           }
           else {
             popup.classList.add("display-none")
+            bbbb2.classList.add("overflow-hidden-mobile")
+
             document.getElementById("popup-menu").classList.add("active");
           }
         }
+        mob_btn.onclick = ccc
         popup.onclick = ccc
         closebtn.onclick = ccc
         let popup_window = document.getElementById("popup-menu")
@@ -626,6 +892,8 @@
         for (let i = 0; i < popup_links.length; ++i) {
           popup_links[i].onclick = ccc
         }
+
+
       </script>
       <style>
         .about1-block-pc {
@@ -675,6 +943,27 @@
             display: flex;
             flex-direction: column;
             padding: 30px 15px;
+            align-items: center;
+          }
+
+          .about1-block-mobile-text {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+            max-width: 500px;
+            text-align: center;
+          }
+
+          .about1-block-mobile-content img {
+            width: 100%;
+          }
+
+          .about1-block-mobile-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
           }
         }
       </style>
@@ -948,7 +1237,7 @@
             }
           }
         </style>
-        <div class="about2-block-mobile">
+        <div id="about2-block" class="about2-block-mobile">
           <img class="yellowcifri-up-m" src="img/yellowcifri-up-m.png" alt="">
           <img class="yellowcifri-down-m" src="img/yellowcifri-down-m.png" alt="">
           <img class="about2-block-pc-staff-wheel-m" src="./img/car_wheel_PNG23307.png" alt="">
@@ -1145,6 +1434,10 @@
           .franshiza-cifri-left-container-title {
             font-size: 18px;
           }
+
+          .franshiza-cifri-right {
+            min-width: 100%;
+          }
         }
       </style>
 
@@ -1331,6 +1624,41 @@
             text-align: center;
           }
         }
+
+        @media (max-width: 530px) {
+          .submit-form-title::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #FFCC00;
+            top: 50%;
+            transform: translate(-50px, -50%);
+            left: 0;
+          }
+
+          .submit-form-title::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: #FFCC00;
+            top: 50%;
+            transform: translate(50px, -50%);
+            right: 0;
+          }
+
+          .submit-form-title {
+            font-weight: 500;
+            font-size: 18px;
+          }
+        }
+
+        @media (max-width: 400px) {
+          .submit-form-title {
+            width: 150px;
+          }
+        }
       </style>
       <div id="form-section" class="form-section">
         <img class="form-section-up" src="./img/form-up.png" alt="">
@@ -1431,6 +1759,63 @@
           display: flex;
           flex-direction: column;
           gap: 30px;
+          margin-bottom: 25px;
+          text-align: center;
+        }
+
+        @media (max-width: 1250px) {
+          .join-part {
+            padding: 30px 15px;
+          }
+
+          .join-part-body-meta-info-list {
+            grid-area: jlist;
+          }
+
+          .join-part-body-head2 {
+            width: 100%;
+          }
+
+          .join-part-body-meta-info img {
+            grid-area: jimg;
+            padding: 0;
+            max-width: 300px;
+            width: 100%;
+          }
+
+          .join-part-body-meta-info {
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-items: center;
+            grid-template-areas: "jlist"
+              "jimg";
+          }
+
+          .join-part-body-meta-info-list {
+            align-items: center;
+            gap: 20px;
+          }
+
+          .join-part-body-meta-info-list-element {
+            flex-direction: column;
+          }
+
+          .join-part-body-head2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 150%;
+          }
+
+          .join-part-body-meta-info-list-element-index {
+            margin: 0;
+            margin-bottom: 5px;
+            text-align: center;
+          }
+
+          .join-part-body-meta-info-list-element-text {
+            width: 100%;
+          }
         }
       </style>
       <div id="join-part" class="join-part">
@@ -1460,7 +1845,8 @@
                   02.
                 </div>
                 <div class="join-part-body-meta-info-list-element-text">
-                  Полная франчайзинговая поддержка.
+                  Отпработанная бизнес-модель.
+
 
                 </div>
               </div>
@@ -1469,7 +1855,8 @@
                   03.
                 </div>
                 <div class="join-part-body-meta-info-list-element-text">
-                  Полная франчайзинговая поддержка.
+                  Работа с проверенным перевозчиком.
+
 
                 </div>
               </div>
@@ -1478,7 +1865,8 @@
                   04.
                 </div>
                 <div class="join-part-body-meta-info-list-element-text">
-                  Полная франчайзинговая поддержка.
+                  Готовая финансовая модель.
+
 
                 </div>
               </div>
@@ -1487,7 +1875,8 @@
                   05.
                 </div>
                 <div class="join-part-body-meta-info-list-element-text">
-                  Полная франчайзинговая поддержка.
+                  Прямая связь с сервисом в США.
+
 
                 </div>
               </div>
@@ -1634,6 +2023,7 @@
         .open-steps-pc-row-elemnt-body {
           font-weight: 500;
           font-size: 18px;
+          padding-right: 5px;
           line-height: 150%;
           max-width: 224px;
 
@@ -1686,8 +2076,216 @@
           gap: 70px;
           margin-top: 60px;
         }
+
+        .open-steps-mobile {
+          display: none;
+        }
+
+        @media (max-width: 1300px) {
+          .open-steps-pc {
+            display: none;
+          }
+
+          .open-steps-mobile {
+            display: block;
+          }
+
+          .open-steps-mobile-title {
+            text-align: center;
+          }
+
+          .open-steps-mobile {
+            padding: 30px 0;
+          }
+
+          .open-steps-mobile-row {
+            display: flex;
+            padding: 20px 15px 0;
+            gap: 20px;
+            position: relative;
+            justify-content: space-between;
+          }
+
+          .open-steps-mobile-row::before {
+            content: "";
+            position: absolute;
+            top: 35px;
+            height: 1px;
+            width: 100%;
+            transform: translate(-15px, 0);
+            background-color: #E3E3E3;
+          }
+
+          .open-steps-mobile-row * {
+            z-index: 10;
+          }
+
+          .open-steps-mobile-row-elemnt-head {
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 20;
+            border-radius: 50%;
+            background-color: #FFCC00;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            margin-bottom: 15px;
+          }
+
+          .open-steps-mobile-row-elemnt-body {
+            max-width: 200px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 150%;
+          }
+
+          .open-steps-mobile-row-elemnt-head1::after {
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 15px;
+            height: 5px;
+            background-color: white;
+            top: 35px;
+          }
+
+          .open-steps-mobile-row-elemnt-head2::before {
+            content: "";
+            width: calc(100% + 15px);
+            height: 4px;
+            position: absolute;
+            top: 15px;
+            left: 0;
+            z-index: -1;
+            background-color: white;
+          }
+
+          .open-steps-mobile-row-elemnt {
+            position: relative;
+
+          }
+        }
       </style>
       <div class="open-steps">
+        <div class="open-steps-mobile">
+          <div class="open-steps-mobile-title">
+            Этапы открытия
+          </div>
+          <div class="open-steps-mobile-rowdash">
+            <div class="open-steps-mobile-row open-steps-mobile-row-elemnt-head1">
+              <div class="open-steps-mobile-row-elemnt">
+                <div class=" open-steps-mobile-row-elemnt-head">
+                  1
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Обсуждаем условия сотрудничества
+                </div>
+              </div>
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  2
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Согласовываем предложенное вами помещение
+                </div>
+              </div>
+            </div>
+            <div class="open-steps-mobile-row">
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  3
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Обсуждаем условия сотрудничества
+                </div>
+              </div>
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  4
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Согласовываем предложенное вами помещение
+                </div>
+              </div>
+            </div>
+            <div class="open-steps-mobile-row">
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  5
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Обсуждаем условия сотрудничества
+                </div>
+              </div>
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  6
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Согласовываем предложенное вами помещение
+                </div>
+              </div>
+            </div>
+            <div class="open-steps-mobile-row">
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  7
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Обсуждаем условия сотрудничества
+                </div>
+              </div>
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  8
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Согласовываем предложенное вами помещение
+                </div>
+              </div>
+            </div>
+            <div class="open-steps-mobile-row">
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  9
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Обсуждаем условия сотрудничества
+                </div>
+              </div>
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  10
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Согласовываем предложенное вами помещение
+                </div>
+              </div>
+            </div>
+            <div class="open-steps-mobile-row">
+              <div class="open-steps-mobile-row-elemnt">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  11
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Обсуждаем условия сотрудничества
+                </div>
+              </div>
+              <div class="open-steps-mobile-row-elemnt open-steps-mobile-row-elemnt-head2">
+                <div class="open-steps-mobile-row-elemnt-head">
+                  12
+                </div>
+                <div class="open-steps-mobile-row-elemnt-body">
+                  Согласовываем предложенное вами помещение
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="open-steps-pc">
           <div class="open-steps-pc-title">
             Этапы открытия
@@ -1961,6 +2559,14 @@
             </div>
           </div>
         </div>
+        <div class="partner-help-mobile">
+          <img class="partners-help-up-m" src="./img/partners-help-up.png" alt="">
+          <img class="partners-help-down-m" src="./img/partners-help-down.png" alt="">
+
+          <div class="partner-help-mobile-title">
+            Поддержка партнеров после открытия
+          </div>
+        </div>
       </div>
       <style>
         .calculator {
@@ -2143,7 +2749,63 @@
           font-weight: 500;
         }
 
-        @media (max-width: 900px) {}
+        @media (max-width: 900px) {
+          .calculator-body-title {
+            font-size: 18px;
+            margin-bottom: 20px;
+          }
+
+          .calculator {
+            position: relative;
+            height: auto;
+            width: 100%;
+
+
+          }
+
+          .calculator-body {
+            position: relative;
+          }
+
+          .calculator-body-content {
+            padding: 20px;
+          }
+
+          .main-calc::after {
+            transform: translate(50%, 19px);
+          }
+
+          .main-calc::before {
+            transform: translate(-50%, 19px);
+          }
+
+          .main-calc {
+            margin-top: 20px;
+            max-width: 500px;
+            width: 100%;
+          }
+
+          .calculator-body-content-inner-addwords {
+            margin-top: 35px;
+          }
+
+          .calculator-body-content-inner-calccount {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .calculator-body-content-inner-calccount-number {
+            margin: 0;
+            font-size: 18px;
+          }
+
+          .calculator-body-content-inner-calccount-text {
+            font-size: 18px;
+            margin-right: 15px;
+          }
+        }
       </style>
       <div class="calculator">
         <div class="calculator-bg"></div>
@@ -2263,11 +2925,13 @@
         }
 
         .footer-down-m {
-            display: none;
-          }
+          display: none;
+        }
+
         .footer-up-m {
-            display: none;
-          }
+          display: none;
+        }
+
         @media (max-width: 1300px) {
           .footer-meta-b1 {
             grid-area: footer-meta-b1;
@@ -2327,11 +2991,13 @@
             bottom: 2px;
             left: 10px;
           }
-        .footer-up-m {
-          display: block;
+
+          .footer-up-m {
+            display: block;
             position: absolute;
             top: 2px;
-            right: 10px;}
+            right: 10px;
+          }
         }
       </style>
       <div id="footer" class="footer">

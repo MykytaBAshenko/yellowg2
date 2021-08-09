@@ -1581,6 +1581,9 @@ img {
 
   .open-steps-mobile-title {
     text-align: center;
+    font-weight: bold;
+font-size: 18px;
+line-height: 150%;
   }
 
   .open-steps-mobile {
@@ -1627,6 +1630,8 @@ img {
     max-width: 200px;
     font-style: normal;
     font-weight: 500;
+    width: 100%;
+
     font-size: 14px;
     line-height: 150%;
   }
@@ -1655,7 +1660,9 @@ img {
 
   .open-steps-mobile-row-elemnt {
     position: relative;
-
+    width: 100%;
+    max-width: 200px;
+    width: 100%;
   }
 }
 

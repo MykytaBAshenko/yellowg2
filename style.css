@@ -1729,17 +1729,9 @@ img {
   display: none;
 }
 
+
+
 @media (max-width: 1600px) {
-  .partners-help-up {
-    display: none;
-  }
-
-  .partners-help-down {
-    display: none;
-  }
-}
-
-@media (max-width: 1100px) {
   .partner-help-pc {
     display: none;
   }
@@ -1989,9 +1981,12 @@ img {
 
 
   }
-
+  .calculator-body-content-inner-addwords{
+    gap: 5px;
+  }
   .calculator-body {
     position: relative;
+    padding: 30px 15px;
   }
 
   .calculator-body-content {
